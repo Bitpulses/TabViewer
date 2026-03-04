@@ -1,0 +1,75 @@
+{
+  "name": "tabviewer",
+  "displayName": "TabViewer",
+  "description": "A file explorer with three columns: Name, Modified, Size",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "views": {
+      "explorer": [
+        {
+          "id": "tabViewer",
+          "name": "TabViewer",
+          "type": "webview"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "tabViewer.refresh",
+        "title": "Refresh",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "tabViewer.navigateUp",
+        "title": "Go Up",
+        "icon": "$(arrow-left)"
+      },
+      {
+        "command": "tabViewer.navigateDown",
+        "title": "Go Down",
+        "icon": "$(arrow-right)"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "tabViewer.navigateUp",
+          "when": "view == tabViewer",
+          "group": "navigation@1"
+        },
+        {
+          "command": "tabViewer.navigateDown",
+          "when": "view == tabViewer",
+          "group": "navigation@2"
+        },
+        {
+          "command": "tabViewer.refresh",
+          "when": "view == tabViewer",
+          "group": "navigation@3"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/vscode": "^1.85.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "eslint": "^8.54.0",
+    "typescript": "^5.3.2"
+  }
+}
