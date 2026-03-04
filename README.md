@@ -2,6 +2,8 @@
 
 A VS Code extension that provides a file explorer with a three-column layout displaying Name, Modified date, and Size.
 
+![Screenshot](resources/screenshot.png)
+
 ## Features
 
 - **Three-Column Layout**: Displays files and folders with Name, Modified date, and Size columns
