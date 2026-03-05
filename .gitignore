@@ -1,7 +1,2 @@
-out
 node_modules
-.vscode/
-.vscode-test/
-*.vsix
-.DS_Store
-Thumbs.db
+
