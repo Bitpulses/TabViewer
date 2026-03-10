@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Dot4diw/TabViewer.git"
+    "url": "https://github.com/Bitpulses/TabViewer.git"
   },
   "engines": {
     "vscode": "^1.85.0"
