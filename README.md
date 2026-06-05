@@ -26,7 +26,7 @@ A VS Code extension that provides a file explorer with a three-column layout dis
 ### From Source
 
 ```bash
-git clone https://github.com/Dot4diw/TabViewer.git
+git clone https://github.com/Bitpulses/TabViewer.git
 cd tabviewer
 npm install
 npm run compile
@@ -44,12 +44,12 @@ Then install the generated `.vsix` file following the steps above.
 
 ### Navigation
 
-| Action | Description |
-|--------|-------------|
-| **Go Up** (←) | Navigate to the previous directory in history |
-| **Go Down** (→) | Navigate to the next directory in history |
-| **Refresh** | Manually refresh the file list |
-| **Breadcrumb** | Click on any path segment to navigate directly |
+| Action                 | Description                                    |
+| ---------------------- | ---------------------------------------------- |
+| **Go Up** (←)   | Navigate to the previous directory in history  |
+| **Go Down** (→) | Navigate to the next directory in history      |
+| **Refresh**      | Manually refresh the file list                 |
+| **Breadcrumb**   | Click on any path segment to navigate directly |
 
 ### Search
 
@@ -59,10 +59,10 @@ Then install the generated `.vsix` file following the steps above.
 
 ## Commands
 
-| Command | Description |
-|---------|-------------|
-| `tabViewer.refresh` | Refresh the file list |
-| `tabViewer.navigateUp` | Navigate back in history |
+| Command                    | Description                 |
+| -------------------------- | --------------------------- |
+| `tabViewer.refresh`      | Refresh the file list       |
+| `tabViewer.navigateUp`   | Navigate back in history    |
 | `tabViewer.navigateDown` | Navigate forward in history |
 
 ## Requirements
