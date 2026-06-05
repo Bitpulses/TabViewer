@@ -2,7 +2,7 @@
   "name": "tabviewer",
   "displayName": "TabViewer",
   "description": "A file explorer with three columns: Name, Modified, Size",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -14,7 +14,9 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onView:tabViewer"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "views": {
@@ -22,7 +24,8 @@
         {
           "id": "tabViewer",
           "name": "TabViewer",
-          "type": "webview"
+          "type": "webview",
+          "icon": "$(list-tree)"
         }
       ]
     },
@@ -69,6 +72,7 @@
     "watch": "tsc -watch -p ./",
     "lint": "eslint src --ext ts"
   },
+  "dependencies": {},
   "devDependencies": {
     "@types/node": "^20.10.0",
     "@types/vscode": "^1.85.0",
